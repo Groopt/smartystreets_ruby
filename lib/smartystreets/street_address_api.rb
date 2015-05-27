@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 module SmartyStreets
-  
+
   # Exposes calls to the SmartyStreets Street Address API.
   #
   # @author Peter Edge (peter.edge@gmail.com)
@@ -56,6 +56,7 @@ module SmartyStreets
         'Content-Type' => 'application/json',
         'Accept' => 'application/json',
         'x-standardize-only' => 'true',
+        'x-include-invalid' => 'true',
         'x-accept-keypair' => 'false'
       }
     end
